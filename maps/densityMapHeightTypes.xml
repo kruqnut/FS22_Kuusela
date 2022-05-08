@@ -92,5 +92,8 @@
 		<densityMapHeightType fillTypeName="SAND" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="true" >
             <collision scale="0.9" baseOffset="0.10" minOffset="0.20" maxOffset="0.60" />
         </densityMapHeightType>
+		<densityMapHeightType fillTypeName="RYE" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
     </densityMapHeightTypes>
 </map>

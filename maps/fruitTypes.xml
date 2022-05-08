@@ -230,15 +230,27 @@
             <destruction canBeDestroyed="true" />
             <mulcher state="5" hasChopperGroundLayer="false"/>
         </fruitType>
+		<fruitType name="rye" shownOnMap="true" useForFieldJob="false">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="true" needsRolling="true" allowsSeeding="true"  directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.05" />
+            <harvest minHarvestingGrowthState="7" maxHarvestingGrowthState="8" cutState="10" minForageGrowthState="5" allowsPartialGrowthState="true" literPerSqm="1.11" cutHeight="0.15" chopperTypeName="CHOPPER_STRAW"/>
+            <growth witheredState="9" numGrowthStates="8" growthStateTime="24000000" resetsSpray="true" growthRequiresLime="true" />
+			<growthGroundTypeChange state="7" groundType="HARVEST_READY" />
+            <windrow name="straw" litersPerSqm="3.68" />
+            <cropCare maxWeederState="3" maxWeederHoeState="2" />
+            <options lowSoilDensityRequired="true" increasesSoilDensity="false" consumesLime="true" startSprayState="0" />
+            <destruction canBeDestroyed="true" filterStart="4" filterEnd="9" />
+            <mapColors default="0.38039 0.34902 0.21176 1" colorBlind="0.28235 0.51373 0.63922 1"/>
+        </fruitType>
     </fruitTypes>
 
     <fruitTypeCategories>
-        <fruitTypeCategory name="GRAINHEADER" >WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM</fruitTypeCategory>
+        <fruitTypeCategory name="GRAINHEADER" >WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM RYE</fruitTypeCategory>
         <fruitTypeCategory name="MAIZEHEADER" >MAIZE SUNFLOWER</fruitTypeCategory>
-        <fruitTypeCategory name="MAIZECUTTER" >MAIZE WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM SUNFLOWER</fruitTypeCategory>
-        <fruitTypeCategory name="DIRECTCUTTER" >GRASS WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM SUNFLOWER</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZECUTTER" >MAIZE WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM SUNFLOWER RYE</fruitTypeCategory>
+        <fruitTypeCategory name="DIRECTCUTTER" >GRASS WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM SUNFLOWER RYE</fruitTypeCategory>
         <fruitTypeCategory name="PICKUP" >GRASS</fruitTypeCategory>
-        <fruitTypeCategory name="SOWINGMACHINE" >WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM OILSEEDRADISH GRASS</fruitTypeCategory>
+        <fruitTypeCategory name="SOWINGMACHINE" >WHEAT BARLEY OAT CANOLA SOYBEAN SORGHUM OILSEEDRADISH GRASS RYE</fruitTypeCategory>
         <fruitTypeCategory name="SUGARCANE_PLANTER" >SUGARCANE</fruitTypeCategory>
         <fruitTypeCategory name="PLANTER" >MAIZE SUNFLOWER SOYBEAN SUGARBEET COTTON</fruitTypeCategory>
         <fruitTypeCategory name="WEEDER" >OILSEEDRADISH GRASS</fruitTypeCategory>
@@ -256,6 +268,7 @@
             <converter from="SOYBEAN"   to="CHAFF"         factor="4.0" />
             <converter from="SORGHUM"   to="CHAFF"         factor="4.0" />
             <converter from="POPLAR"    to="WOODCHIPS"     factor="3.0" />
+			<converter from="RYE"       to="CHAFF"         factor="6.0" windrowFactor="1.0" />
         </fruitTypeConverter>
         <fruitTypeConverter name="MOWER">
             <converter from="GRASS"     to="GRASS_WINDROW" factor="1.0" windrowFactor="1.0" />
@@ -263,6 +276,7 @@
             <converter from="WHEAT"     to="STRAW"         factor="1.0" windrowFactor="1.0" />
             <converter from="BARLEY"    to="STRAW"         factor="1.0" windrowFactor="1.0" />
             <converter from="OAT"       to="STRAW"         factor="1.0" windrowFactor="1.0" />
+			<converter from="RYE"       to="STRAW"         factor="1.0" windrowFactor="1.0" />
         </fruitTypeConverter>
     </fruitTypeConverters>
 </map>

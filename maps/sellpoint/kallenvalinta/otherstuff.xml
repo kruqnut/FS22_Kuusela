@@ -43,7 +43,7 @@
     </hotspots>
 
     <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="BOARDS HONEY FLOUR POTATO EGG WOOL MILK BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL CHOCOLATE FURNITURE STRAWBERRY LETTUCE TOMATO SUGARBEET" />
+        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="BOARDS HONEY FLOUR POTATO EGG WOOL MILK BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL CHOCOLATE FURNITURE STRAWBERRY LETTUCE TOMATO SUGARBEET RYE RYEBREAD RYEFLOUR" />
         <fillType name="BOARDS"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
         <fillType name="HONEY"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
         <fillType name="FLOUR"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />       
@@ -64,6 +64,9 @@
         <fillType name="LETTUCE"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
         <fillType name="TOMATO"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
 		<fillType name="SUGARBEET"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+		<fillType name="RYE"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+		<fillType name="RYEFLOUR"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+		<fillType name="RYEBREAD"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
     </sellingStation>
 
     <i3dMappings>

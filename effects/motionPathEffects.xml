@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects>
+    <motionPathEffect filename="effects/cutter/cutterEffects.xml" />
+    <motionPathEffect filename="$data/effects/cutter/cutterFruitEffects.xml" />
+    <motionPathEffect filename="$data/effects/cutter/cutterThreshingEffects.xml" />
+    <motionPathEffect filename="$data/effects/fertilizer/fertilizerEffects.xml" />
+    <motionPathEffect filename="effects/chopper/chopperEffects.xml" />
+    <motionPathEffect filename="$data/effects/tedder/tedderEffects.xml" />
+    <motionPathEffect filename="$data/effects/windrower/windrowerEffects.xml" />
+    <motionPathEffect filename="$data/effects/cultivator/cultivatorEffects.xml" />
+    <motionPathEffect filename="$data/effects/plow/plowEffects.xml" />
+    <motionPathEffect filename="$data/effects/pickup/pickupEffects.xml" />
+    <motionPathEffect filename="$data/effects/mower/mowerEffects.xml" />
+    <motionPathEffect filename="$data/effects/mixerWagon/mixerWagonEffects.xml" />
+    <motionPathEffect filename="$data/effects/manure/manureEffects.xml" />
+    <motionPathEffect filename="$data/effects/stone/stoneEffects.xml" />
+    <motionPathEffect filename="$data/effects/wood/woodEffects.xml" />
+    <motionPathEffect filename="$data/effects/sugarcane/sugarcaneEffects.xml" />
+    <motionPathEffect filename="$data/effects/snow/snowEffects.xml" />
+	<motionPathEffect filename="$data/effects/grape/grapeEffects.xml" />
+    <motionPathEffect filename="$data/effects/olive/oliveEffects.xml" />
+</motionPathEffects>

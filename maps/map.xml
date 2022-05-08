@@ -39,6 +39,17 @@
     </helpline>
 
     <gameplayHints filename="$dataS/gameplayHints.xml" />
+	<precisionFarming>
+		<soilMap filename="infoLayer_soilMap.grle"/>
+	<fruitRequirements>
+		<fruitRequirement fruitTypeName="RYE" alwaysAllowFertilization="false" ignoreOverfertilization="false">
+			<soil soilTypeIndex="1" targetLevel="130" reduction="130" yieldPotential="0.8"/>
+			<soil soilTypeIndex="2" targetLevel="150" reduction="140" yieldPotential="1.0"/>
+			<soil soilTypeIndex="3" targetLevel="180" reduction="160" yieldPotential="1.25"/>
+			<soil soilTypeIndex="4" targetLevel="160" reduction="150" yieldPotential="0.9"/>
+		</fruitRequirement>
+	</fruitRequirements>
+</precisionFarming>
 
     <hotspots>
         <placeableHotspot type="SHOP_ANIMAL"	text="$l10n_animals_dealer"	worldPosition="-907.153 -308.538"	teleportWorldPosition="-907.153 127.888 -308.538" />
@@ -52,7 +63,7 @@
     <!-- <sprayTypes filename="$data/maps/mapUS/maps_sprayTypes.xml" /> -->
     <fruitTypes filename="maps/fruitTypes.xml" />
 
-    <motionPathEffects filename="$data/effects/motionPathEffects.xml"/>
+    <motionPathEffects filename="effects/motionPathEffects.xml"/>
     <bales filename="$data/maps/maps_bales.xml"/>
 
     <additionalFiles>

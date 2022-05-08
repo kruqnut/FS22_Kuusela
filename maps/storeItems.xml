@@ -119,4 +119,9 @@
     <storeItem xmlFilename="$data/foliage/decoFoliage/decoFoliageDLC_daisy.xml" />
     <storeItem xmlFilename="$data/foliage/decoFoliage/decoFoliageDLC_daisyYellow.xml" />
 	
+	<storeItem xmlFilename="pallets/ryeBreadBoxPallet.xml" />
+	<storeItem xmlFilename="pallets/ryeFlourPallet.xml" />
+	<storeItem xmlFilename="productions/ryeBakeryEU.xml" />
+	<storeItem xmlFilename="productions/grainMillRye.xml" />
+	
 </storeItems>

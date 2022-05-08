@@ -726,6 +726,32 @@
                         specular="$data/fillPlanes/stone_specular.png"
                         distance="maps/fillPlanesTP/fruit_tp_ground_texture/sandDistance_diffuse.dds" />
         </fillType>	
+		<fillType name="RYE" title="Rye" showOnPriceTable="true" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="0.68" maxPhysicalSurfaceAngle="15" />
+            <economy pricePerLiter="0.313">
+                <factors>
+                    <factor period="1"  value="1.19" />
+                    <factor period="2"  value="0.95" />
+                    <factor period="3"  value="0.85" />
+                    <factor period="4"  value="0.8" />
+                    <factor period="5"  value="0.82" />
+                    <factor period="6"  value="0.85" />
+                    <factor period="7"  value="0.9" />
+                    <factor period="8"  value="0.75" />
+                    <factor period="9"  value="0.8" />
+                    <factor period="10" value="0.82" />
+                    <factor period="11" value="0.89" />
+                    <factor period="12" value="1.09" />
+                </factors>
+            </economy>
+            <image      hud     ="hud/fillTypes/hud_fill_rye.png" />
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
+            <textures   diffuse ="fillPlanes/rye_diffuse.png"
+                        normal  ="fillPlanes/oat_normal.png"
+                        specular="fillPlanes/oat_specular.png"
+                        distance="$data/fillPlanes/distance/oatDistance_diffuse.png" />
+        </fillType>  
+
 	<!--	MAA-Ainekset	-->
 
 
@@ -1112,6 +1138,48 @@
             <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_furniture.png" />
             <pallet     filename="$data/objects/pallets/furnitureStackPallet/furnitureStackPallet.xml" />
         </fillType>
+				<fillType name="RYEFLOUR" title="Rye Flour" showOnPriceTable="true">
+            <physics massPerLiter="0.17" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="0.6">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image      hud     ="hud/fillTypes/hud_fill_ryeflour.png" />
+            <pallet     filename="pallets/ryeFlourPallet.xml" />
+        </fillType>
+		<fillType name="RYEBREAD" title="Sourdough Rye Bread" showOnPriceTable="true">
+            <physics massPerLiter="0.25" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.75">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image      hud     ="hud/fillTypes/hud_fill_ryebread.png" />
+            <pallet     filename="pallets/ryeBreadBoxPallet.xml" />
+        </fillType>
 
 <!-- __________________ Production Chains end __________________ -->
 
@@ -1424,29 +1492,29 @@
     </fillTypes>
 
     <fillTypeCategories>
-        <fillTypeCategory name="BULK" >DIRT GRAVEL SAND WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM OLIVE STONE MINERAL_FEED</fillTypeCategory>
+        <fillTypeCategory name="BULK" >DIRT GRAVEL SAND WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM OLIVE STONE MINERAL_FEED RYE</fillTypeCategory>
         <fillTypeCategory name="LIQUID" >MILK WATER DIESEL DEF</fillTypeCategory>
         <fillTypeCategory name="PIECE" >WOOL TREESAPLINGS EGG</fillTypeCategory>
         <fillTypeCategory name="WINDROW" >STRAW DRYGRASS_WINDROW GRASS_WINDROW</fillTypeCategory>
-        <fillTypeCategory name="COMBINE" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM</fillTypeCategory>
+        <fillTypeCategory name="COMBINE" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM RYE</fillTypeCategory>
         <fillTypeCategory name="SPRAYER" >LIQUIDFERTILIZER HERBICIDE</fillTypeCategory>
         <fillTypeCategory name="SPREADER" >FERTILIZER</fillTypeCategory>
         <fillTypeCategory name="MIXERWAGON" >FORAGE FORAGE_MIXING DRYGRASS_WINDROW SILAGE STRAW MINERAL_FEED</fillTypeCategory>
-        <fillTypeCategory name="AUGERWAGON" >WHEAT BARLEY OAT CANOLA SOYBEAN SUNFLOWER MAIZE FERTILIZER SEEDS SORGHUM</fillTypeCategory>
+        <fillTypeCategory name="AUGERWAGON" >WHEAT BARLEY OAT CANOLA SOYBEAN SUNFLOWER MAIZE FERTILIZER SEEDS SORGHUM RYE</fillTypeCategory>
         <fillTypeCategory name="FORAGEWAGON" >STRAW GRASS_WINDROW DRYGRASS_WINDROW CHAFF SILAGE</fillTypeCategory>
         <fillTypeCategory name="SILAGETRAILER" >STRAW GRASS_WINDROW DRYGRASS_WINDROW CHAFF SILAGE WOODCHIPS</fillTypeCategory>
-        <fillTypeCategory name="TRAINWAGON" >DIRT GRAVEL SAND WHEAT BARLEY OAT CANOLA MAIZE SUNFLOWER SOYBEAN SUGARBEET POTATO SORGHUM WOODCHIPS OLIVE GRAPE</fillTypeCategory>
+        <fillTypeCategory name="TRAINWAGON" >DIRT GRAVEL SAND WHEAT BARLEY OAT CANOLA MAIZE SUNFLOWER SOYBEAN SUGARBEET POTATO SORGHUM WOODCHIPS OLIVE GRAPE RYE</fillTypeCategory>
         <fillTypeCategory name="FORAGEHARVESTER" >CHAFF GRASS_WINDROW WOODCHIPS</fillTypeCategory>
         <fillTypeCategory name="SLURRYTANK" >LIQUIDMANURE DIGESTATE</fillTypeCategory>
         <fillTypeCategory name="MANURESPREADER" >MANURE</fillTypeCategory>
         <fillTypeCategory name="FORK" >MANURE SILAGE CHAFF STRAW GRASS_WINDROW DRYGRASS_WINDROW</fillTypeCategory>
-        <fillTypeCategory name="SHOVEL" >DIRT GRAVEL SAND WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM GRAPE OLIVE STONE MINERAL_FEED</fillTypeCategory>
+        <fillTypeCategory name="SHOVEL" >DIRT GRAVEL SAND WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT MANURE SEEDS FORAGE FORAGE_MIXING CHAFF WOODCHIPS SILAGE STRAW GRASS_WINDROW DRYGRASS_WINDROW FERTILIZER PIGFOOD LIME SNOW ROADSALT SORGHUM GRAPE OLIVE STONE MINERAL_FEED RYE</fillTypeCategory>
         <fillTypeCategory name="ANIMAL" >COW_SWISS_BROWN COW_ANGUS COW_HOLSTEIN COW_LIMOUSIN SHEEP_BLACK_WELSH SHEEP_STEINSCHAF SHEEP_SWISS_MOUNTAIN SHEEP_LANDRACE PIG_LANDRACE PIG_BLACK_PIED PIG_BERKSHIRE CHICKEN CHICKEN_ROOSTER</fillTypeCategory>
         <fillTypeCategory name="HORSE" >HORSE_PALOMINO HORSE_BLACK HORSE_BAY HORSE_PINTO HORSE_SEAL_BROWN HORSE_GRAY HORSE_DUN HORSE_CHESTNUT</fillTypeCategory>
-        <fillTypeCategory name="FARMSILO" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM</fillTypeCategory>
+        <fillTypeCategory name="FARMSILO" >WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SORGHUM RYE</fillTypeCategory>
         <fillTypeCategory name="HAYLOFT" >STRAW DRYGRASS_WINDROW</fillTypeCategory>
-        <fillTypeCategory name="LOADINGVEHICLE">WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SEEDS FORAGE CHAFF WOODCHIPS SILAGE FERTILIZER LIME SORGHUM</fillTypeCategory>
-        <fillTypeCategory name="PRODUCT">FLOUR BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE RAISINS GRAPEJUICE CHOCOLATE BOARDS FURNITURE STRAWBERRY LETTUCE TOMATO</fillTypeCategory>
+        <fillTypeCategory name="LOADINGVEHICLE">WHEAT BARLEY OAT CANOLA SUNFLOWER SOYBEAN MAIZE SEEDS FORAGE CHAFF WOODCHIPS SILAGE FERTILIZER LIME SORGHUM RYE</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">FLOUR BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL GRAPE RAISINS GRAPEJUICE CHOCOLATE BOARDS FURNITURE STRAWBERRY LETTUCE TOMATO RYEFLOUR RYEBREAD</fillTypeCategory>
         <fillTypeCategory name="PRODUCT_BGA">METHANE ELECTRICCHARGE</fillTypeCategory>
     </fillTypeCategories>
 
@@ -1467,7 +1535,7 @@
             <sound template="grainSmallFill"/>
         </fillTypeSound>
 
-        <fillTypeSound fillTypes="WHEAT BARLEY CANOLA SOYBEAN SEEDS FERTILIZER">
+        <fillTypeSound fillTypes="WHEAT BARLEY CANOLA SOYBEAN SEEDS FERTILIZER RYE">
             <sound template="grainMediumFill"/>
         </fillTypeSound>
 

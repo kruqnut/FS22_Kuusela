@@ -37,7 +37,7 @@
     </hotspots>
 
     <sellingStation supportsExtension="false" litersForFullPriceDrop="100000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WHEAT BARLEY CANOLA OAT MAIZE SOYBEAN SORGHUM SUNFLOWER" />
+        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WHEAT BARLEY CANOLA OAT MAIZE SOYBEAN SORGHUM SUNFLOWER RYE" />
 
 	    <fillType name="WHEAT"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
         <fillType name="BARLEY"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
@@ -48,7 +48,8 @@
         <fillType name="SOYBEAN"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
         <fillType name="SORGHUM"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
         <fillType name="SUNFLOWER"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
-
+        <fillType name="RYE"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+		
     </sellingStation>
 
     <i3dMappings>
