@@ -747,8 +747,8 @@
             <image      hud     ="hud/fillTypes/hud_fill_rye.png" />
             <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
             <textures   diffuse ="fillPlanes/rye_diffuse.png"
-                        normal  ="fillPlanes/oat_normal.png"
-                        specular="fillPlanes/oat_specular.png"
+                        normal  ="$data/maps/textures/shared/wheatBottom_normal.dds"
+                        specular="$data/fillPlanes/wheat_specular.dds"
                         distance="$data/fillPlanes/distance/oatDistance_diffuse.png" />
         </fillType>  
 
