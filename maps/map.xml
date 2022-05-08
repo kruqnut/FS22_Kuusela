@@ -72,7 +72,7 @@
         <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
         <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
         <additionalFile filename="$data/effects/effects.xml" />
-  
+
     </additionalFiles>
 
     <!-- Adicione todas as camadas de folhagem que não sejam frutas. Você precisa definir essas camadas de folhagem para poder removê-las com um cultivador ou arado -->
