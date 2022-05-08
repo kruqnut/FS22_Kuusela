@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sellingStationShoppingMall" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="$data/fillPlanes/woodChips_diffuse.png"/>
+    <File fileId="9" filename="$data/fillPlanes/woodChips_normal.png"/>
+    <File fileId="10" filename="$data/fillPlanes/woodChips_specular.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="5" filename="$data/placeables/mapAlpine/sellingStationWoodChips/woodenFence_diffuse.png"/>
+    <File fileId="6" filename="$data/placeables/mapAlpine/sellingStationWoodChips/woodenFence_normal.png"/>
+    <File fileId="7" filename="$data/placeables/mapAlpine/sellingStationWoodChips/woodenFence_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="woodChipPile_mat" materialId="6">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="woodenFence_mat" materialId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingStationWood.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="sellingStationWood" nodeId="20">
+        <Shape shapeId="1" name="infoTrigger" translation="-5.76478 -94.03 -4.295" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="tipOcclusionUpdateAreas" translation="0 -84.94 0" nodeId="22">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-9.80479 -97.6502 -11.4442" nodeId="23">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="10.4907 -6.82121e-15 8.0222" nodeId="24"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="collisions" translation="0 -89.05 0" nodeId="25">
+          <Shape shapeId="2" name="tipCol" translation="-4.59457 0.183 -7.3279" visibility="false" static="true" collisionMask="524288" density="0.0001" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="sellingStation" translation="2.545 -3.3392e-09 -30.3743" rotation="180 -88.8973 -180" nodeId="27">
+          <Shape shapeId="3" name="woodTrigger" translation="-0.177816 0.196491 -1.632" rotation="7.95454e-16 1.61406 -4.45454e-14" scale="3.34001 1 1.86344" static="true" trigger="true" collisionMask="1090521088" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="4" name="woodSellTrigger" translation="5.35719 0 4.03058" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="woodSellTriggerMarker" translation="-6.10352e-07 2.11948 -3.05176e-07" nodeId="30"/>
+          </Shape>
+          <TransformGroup name="warningStripes" nodeId="31">
+            <Shape shapeId="5" name="warningStripesCorner2" translation="12.4659 7.70569e-06 4.64096" rotation="-0.000265288 -88.8975 0.000260231" clipDistance="80" nodeId="32" materialIds="5" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="6" name="warningStripesCorner1" translation="-13.3393 2.58646e-08 5.13766" rotation="-180 88.8977 180" clipDistance="80" nodeId="33" materialIds="5" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="5" name="warningStripesCorner2" translation="-13.5959 2.60805e-08 -8.19487" rotation="-180 88.8977 180" clipDistance="80" nodeId="34" materialIds="5" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="6" name="warningStripesCorner1" translation="12.2093 -4.62974e-07 -8.69157" rotation="-0.000265287 -88.8975 0.000260229" clipDistance="80" nodeId="35" materialIds="5" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+          <TransformGroup name="sellingStationAINode" translation="0.227827 0 -0.005" rotation="0 -118.539 0" nodeId="36"/>
+          <TransformGroup name="unloadTriggerMarker" translation="-4.34868 1.48267 0.770401" rotation="-180 88.8973 180" nodeId="37"/>
+        </TransformGroup>
+        <TransformGroup name="productionPoint" translation="0 0 -6.39441" nodeId="38">
+          <Shape shapeId="7" name="playerTrigger" translation="-20.9837 0 -11.2117" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" translation="-6.10352e-07 1.34102 -3.05176e-07" nodeId="40"/>
+          </Shape>
+          <TransformGroup name="teleportNode" translation="2.5516 0 -19.4581" nodeId="41"/>
+        </TransformGroup>
+        <TransformGroup name="palletSpawner" translation="-16.8656 0 -18.6779" nodeId="42">
+          <TransformGroup name="spawnSpace1start" translation="-2 0 0" nodeId="43">
+            <TransformGroup name="spawnSpace1end" translation="4 0 2.27374e-15" nodeId="44"/>
+          </TransformGroup>
+          <Shape shapeId="8" name="warningStripes_palletSpawnArea" clipDistance="300" nodeId="45" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="loadingStation" translation="-30.8764 7.67114e-07 -13.8342" rotation="1.1974e-07 86.789 1.01375e-05" nodeId="46">
+          <Shape shapeId="9" name="loadTrigger" translation="0 3.623 0" static="true" trigger="true" collisionMask="1073741824" nodeId="47" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="dischargeNode" translation="0 3.42266 0" nodeId="48"/>
+          </Shape>
+          <TransformGroup name="loadTriggerMarker" nodeId="49"/>
+          <TransformGroup name="loadingStationAINode" translation="-0.111301 0 -0.175219" rotation="0 -66.7309 0" nodeId="50"/>
+          <Shape shapeId="10" name="woodChipsFence" translation="-4.182 0 -10.0571" rotation="0 25 0" static="true" clipDistance="300" nodeId="51" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="woodChipsHill" kinematic="true" clipDistance="200" nodeId="52" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

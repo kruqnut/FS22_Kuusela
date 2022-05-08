@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<growth>
+	<seasonal>				 <!-- rye has 8 states now(!6) states -->
+        <fruit name="rye" initialState="7">
+<!-- MAR --><period index="1" >
+            </period>
+<!-- APR --><period index="2" plantingAllowed="true">
+                <update range="1-3" add="1" />
+            </period>
+<!-- MAY --><period index="3">
+                <update range="1-4" add="1" />
+            </period>
+<!-- JUN --><period index="4">
+			<update range="1-5" add="1" />
+            </period>
+<!-- JUL --><period index="5">
+				<update range="1-6" add="1" />
+            </period>
+<!-- AUG --><period index="6" plantingAllowed="true">
+				<update range="1-7" add="1" />
+            </period>
+<!-- SEP --><period index="7" plantingAllowed="true">
+				<update range="1-7" add="1" />
+            </period>
+<!-- OCT --><period index="8">
+			<update range="4-8" set="9" />
+            </period>
+<!--NOV --><period index="9">
+            </period>
+<!-- DEC --><period index="10">
+            </period>
+<!-- JAN --><period index="11">
+            </period>
+ <!-- FEB--><period index="12">
+            </period>
+        </fruit>
+		</seasonal>
+</growth>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="110" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingStationWoodHeatingPlant.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="sellingStationWoodHeatingPlant" rotation="9.91468e-07 0 1.46398e-05" clipDistance="150" nodeId="95940">
+        <TransformGroup name="old_woodtrigger" translation="0 -0.506249 0" nodeId="95956"/>
+        <TransformGroup name="unloadMarker" translation="0 0 0.000721892" nodeId="95942"/>
+        <TransformGroup name="uselessTrigger" translation="-9.63289 0 3.706" nodeId="95954"/>
+        <Shape shapeId="1" name="baleTrigger" translation="0 -0.506249 0" kinematic="true" compound="true" trigger="true" collisionMask="16781312" nodeId="95944" materialIds="110" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="2" name="unloadTrigger" kinematic="true" compound="true" collisionMask="1073741824" nodeId="95945" materialIds="110" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="playerTriggerMarker" translation="-9.63289 0 3.706" nodeId="95946"/>
+        <TransformGroup name="hotspotNode" nodeId="95947"/>
+        <TransformGroup name="teleportNode" translation="-8.53869 0 3.10392" nodeId="95948"/>
+        <Shape shapeId="3" name="tipCollision" translation="1.68089 0 0" visibility="false" static="true" collisionMask="524288" density="0.0001" nodeId="95949" materialIds="110" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-8.66911 0 -7.15241" nodeId="95950">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="17.4498 0 14.3275" nodeId="95951"/>
+        </TransformGroup>
+        <TransformGroup name="aiNode" translation="-0.120368 0 -0.425493" rotation="0 85 0" nodeId="95952"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

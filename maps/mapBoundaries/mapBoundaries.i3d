@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="Mod Map Alpine" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+    </Asset>
+    <Files/>
+    <Materials>
+        <Material name="lambert1" materialId="18" diffuseColor="0.494118 0.494118 0.494118 1"/>
+    </Materials>
+    <Shapes externalShapesFile="mapBoundaries.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="mapBoundaries" nodeId="2184">
+            <Shape shapeId="1" name="mapBoundaryS01" translation="0 228.103 2039.14" static="true" density="0.0001" nodeId="2185" materialIds="18" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="2" name="mapBoundaryN01" translation="135.622 263.839 -2036.71" static="true" density="0.0001" nodeId="2186" materialIds="18" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="3" name="mapBoundaryE01" translation="2038.61 303.88 0" static="true" density="0.0001" nodeId="2187" materialIds="18" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="4" name="mapBoundaryW01" translation="-1940.06 232.299 0" static="true" density="0.0001" nodeId="2188" materialIds="18" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

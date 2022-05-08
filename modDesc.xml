@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="65">
+    <author>FinFarmingSim, Mr_Mazzony</author>
+    <version>1.6.2.0</version>
+
+    <title>
+        <en>KUUSELA</en>
+
+    </title>
+
+    <description>
+        <en><![CDATA[Welcome to Kuusela. This is Finnish based Forest and Agriculture map.
+
+- You don't own any lands or vechiles at start, at any difficult level.
+- 10 ready fields
+- Lots of trees and meadowns
+- PF supported
+- Added corps: Rye
+- Dirt, sand and gravel
+- Stonecrusher (Masan maanrakennus) where you can crush yours stones and dirt to gravel and sand to earn more money!
+- Finnish license plates 
+- Finnish style weather
+
+Thanks to GIANTS, MrMAZZONY, AGAME78, JOOKYA
+
+
+Changelog 1.6.0.0
+
+- Added rye
+- PF supported
+
+Changelog 1.5.0.0
+
+New savegame is recommended.
+
+- Added bale and woodchips sellpoints
+- Added new sellpoint to dirt etc.
+- Added new sellpoint to production items
+- Added stonecrusher
+- New store signs
+- Fixed farmlands
+- New PDA image
+- Finnish style licenseplates
+- Lots of fixing
+
+Works on multiplayer
+
+I Hope you all like this map.]]>
+	   </en>
+        <de><![CDATA[Willkommen bei Kuusela. Dies ist eine finnische Wald- und Landwirtschaftskarte.
+
+- Sie besitzen zu Beginn keine Länder oder Vechiles, egal auf welcher Schwierigkeitsstufe.
+- 10 fertige Felder
+- Viele Bäume und Wiesen
+- PF unterstützt
+- Corps hinzugefügt: Rye
+- Schmutz, Sand und Kies
+- Stonecrusher (Masan maanrakennus), wo du deine Steine ​​und Dreck zu Kies und Sand zermalmen kannst, um mehr Geld zu verdienen!
+- Finnische Nummernschilder
+- Finnisches Wetter
+
+Danke an GIANTS, MrMAZZONY, AGAME78, JOOKYA
+
+
+Changelog 1.6.0.0
+
+- Roggen hinzugefügt
+- PF unterstützt
+
+Changelog 1.5.0.0
+
+Neues Savegame wird empfohlen.
+
+- Verkaufsstellen für Ballen und Hackschnitzel hinzugefügt
+- Neuer Verkaufspunkt für Schmutz usw. hinzugefügt.
+- Neuer Verkaufspunkt zu Produktionsartikeln hinzugefügt
+- Steinbrecher hinzugefügt
+- Neue Ladenschilder
+- Ackerland repariert
+- Neues PDA-Image
+- Nummernschilder im finnischen Stil
+- Viel Fixierung
+
+Funktioniert im Multiplayer
+
+Ich hoffe euch allen gefällt diese Karte.]]></de>
+        <fr><![CDATA[Bienvenue à Kuusela. Il s'agit d'une carte forestière et agricole basée en Finlande.
+
+- Vous ne possédez pas de terres ou de véhicules au début, à n'importe quel niveau difficile.
+- 10 champs prêts
+- Beaucoup d'arbres et de prairies
+- PF pris en charge
+- Corps ajouté : Rye
+- Terre, sable et gravier
+- Stonecrusher (Masan maanrakennus) où vous pouvez écraser vos pierres et votre terre en gravier et en sable pour gagner plus d'argent !
+- plaques d'immatriculation finlandaises
+- Météo de style finlandais
+
+Merci à GIANTS, MrMAZZONY, AGAME78, JOOKYA
+
+
+Changelog 1.6.0.0
+
+- Seigle ajouté
+- PF pris en charge
+
+Changelog 1.5.0.0
+Une nouvelle sauvegarde est recommandée.
+
+- Ajout de points de vente de balles et de copeaux de bois
+- Ajout d'un nouveau point de vente à la saleté, etc.
+- Ajout d'un nouveau point de vente aux articles de production
+- Ajout d'un broyeur de pierres
+- Nouvelles enseignes de magasin
+- Terres agricoles fixes
+- Nouvelle image PDA
+- Plaques d'immatriculation de style finlandais
+- Beaucoup de fixation
+
+Fonctionne en multijoueur
+
+J'espère que vous aimez tous cette carte.]]></fr>
+    </description>
+
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>
+	
+	<storeItems>
+    
+	<storeItem xmlFilename="maps/sellpoint/kallenmylly/sellingStationShoppingMall.xml" />
+	<storeItem xmlFilename="maps/sellpoint/pekanpuutavara/sellingStationWood.xml" />
+	<storeItem xmlFilename="maps/sellpoint/bensis/gasStation.xml" />
+	<storeItem xmlFilename="maps/sellpoint/masanmaanrakennus/sellingStationGeneric.xml" />
+	<storeItem xmlFilename="maps/sellpoint/rockCrusher/rockCrusher.xml" />
+	<storeItem xmlFilename="maps/sellpoint/paalinmyynti/sellingStationBales.xml" />
+	<storeItem xmlFilename="maps/sellpoint/kallenvalinta/otherstuff.xml" />
+    <storeItem xmlFilename="maps/sellpoint/hakkeenmyynti/sellingStationWoodHeatingPlant.xml" />
+	<storeItem xmlFilename="maps/sellpoint/korjaamo/sellingStationVehicles.xml"  />
+
+	</storeItems>
+    
+	<maps>
+        <map id="SampleModMap" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="maps/map.xml" defaultVehiclesXMLFilename="maps/vehicles.xml" defaultPlaceablesXMLFilename="maps/placeables.xml" defaultGrowthXMLFilename="maps/maps_growth.xml" defaultItemsXMLFilename="maps/items.xml"> 
+            <title>
+                <en>KUUSELA</en>
+                <de>KUUSELA</de>
+
+            </title>
+            <description>
+				<en>Finnish based Forest and Agriculture map</en>
+
+            </description>
+            <iconFilename>preview.png</iconFilename>
+        </map>
+    </maps>
+
+</modDesc>
+
+
+<!--
+
+Changelog v1.5.0.XX
+- readjusted some ground heights in shop area
+- Implemented more Finnish-style weather, but edited to right latitude (60) (credits to Agame78 for working this weather out)
+- excluded "main"roads to its own farmland for snowploughing (cheaper to buy ("get contract to plough show"))
+- Adjusted fruit growth to be more like finnish growth cycle
+
+
+Changelog v1.5.0.11
+- Lisenceplate coloring corrected on yellow square plates
+		
+Changelog v1.5.0.0
+New game save required.
+- Added bale and woodchips sellpoints
+- Added new sellpoint to dirt etc. 
+- Added new sellpoint to production items
+- Added stonecrusher
+- New store signs
+- Fixed farmlands
+- Guide icons removed
+- New PDA image
+- Finnish style licenseplates
+- Lots of fixing
+
+Changelog v1.2.0.0
+- Fixed farmlands (easy level player owned all the lands at the start)
+- Field numbers fixed
+- Dirt, sand anda gravel added to sellpoint (Kallen valinta)
+- Now you can buy sawmill (Pekan puutavara) to make planks.
+- Fixed map pda 
+
+-->

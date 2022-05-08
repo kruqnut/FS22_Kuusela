@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Kallen valinta</name>
+        <image>$data/placeables/sellingStationGeneric/store_sellingStationGeneric.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>604444</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>71982</indexBufferMemoryUsage>
+        <textureMemoryUsage>64</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/sellpoint/kallenvalinta/otherstuff.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+    <ai>
+        <updateAreas />
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="false" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarker" teleportNode="teleportNode" />
+    </hotspots>
+
+    <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="BOARDS HONEY FLOUR POTATO EGG WOOL MILK BREAD CAKE BUTTER CHEESE FABRIC SUGAR CLOTHES CEREAL SUNFLOWER_OIL CANOLA_OIL CHOCOLATE FURNITURE STRAWBERRY LETTUCE TOMATO SUGARBEET" />
+        <fillType name="BOARDS"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="HONEY"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="FLOUR"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />       
+        <fillType name="POTATO"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="BUTTER"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="CHEESE"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="FABRIC"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+		<fillType name="EGG"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="WOOL"             priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="SUGAR"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="CLOTHES"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="CEREAL"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="SUNFLOWER_OIL"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="CANOLA_OIL"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="CHOCOLATE"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="FURNITURE"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="STRAWBERRY"       priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="LETTUCE"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="TOMATO"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+		<fillType name="SUGARBEET"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+    </sellingStation>
+
+    <i3dMappings>
+        <i3dMapping id="unloadingStation" node="0>" />
+        <i3dMapping id="unloadTrigger" node="0>0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>0|0" />
+        <i3dMapping id="teleportNode" node="0>1" />
+    </i3dMappings>
+</placeable>

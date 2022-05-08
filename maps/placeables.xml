@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeables>
+
+<!--	KALLEN MYLLY	-->
+    <placeable mapBoundId="sellingStationShoppingMall"     filename="$mapdir$/maps/sellpoint/kallenmylly/sellingStationShoppingMall.xml"       position="-838.042 128.165 -357.277"           rotation="-180 166.02 -180" />
+	
+<!--	Pekan Puutavara	-->
+    <placeable mapBoundId="sellingStationWood"             filename="$mapdir$/maps/sellpoint/pekanpuutavara/sellingStationWood.xml"             position="-897.383 127.428 -393.808"           rotation="0 -12.139 0" />
+	
+<!--	Gas Station	-->
+    <placeable mapBoundId="gasStation"            		   filename="$mapdir$/maps/sellpoint/bensis/gasStation.xml"                       		position="-717.873 144.833 -453.466"    	 	 rotation="0 0 0" />
+	
+<!--	Masan Maanrakennus	-->
+	<placeable mapBoundId="maaAineksetMyynti"              filename="$mapdir$/maps/sellpoint/masanmaanrakennus/sellingStationGeneric.xml"       position="-984.010 124.130 -618.938"    	 	 rotation="180 77.846 180" />
+	
+<!--	StoneCrusher200	-->
+	<placeable mapBoundId="debrisCrusher"             	   filename="$mapdir$/maps/sellpoint/rockCrusher/rockCrusher.xml"         				position="-962.968 124.109 -629.942"    	 	 rotation="180 -89.897 -180" />
+	
+<!--	Paalien Myynti	-->
+	<placeable mapBoundId="sellingStationBales"            filename="$mapdir$/maps/sellpoint/paalinmyynti/sellingStationBales.xml"              position="-909.687 127.428 -369.118"    	 	 rotation="0 12.592 0" />
+	
+<!--	Kallen valinta	-->
+	<placeable mapBoundId="unloadingStation"          	   filename="$mapdir$/maps/sellpoint/kallenvalinta/otherstuff.xml"                      position="-779.554 127.287 -358.543"    	 	 rotation="0 14.831 0" />
+	
+<!--	Korjaus	-->
+	<placeable mapBoundId="sellingStationVehicles"         filename="$mapdir$/maps/sellpoint/korjaamo/sellingStationVehicles.xml"           	position="-698.898 134.607 -473.751"    	 	 rotation="0 1.073 0" />
+
+<!--	Woodchip selltrigger	-->
+	<placeable mapBoundId="sellingStationWoodHeatingPlant" filename="$mapdir$/maps/sellpoint/hakkeenmyynti/sellingStationWoodHeatingPlant.xml"   position="-883.569 127.424 -459.2"    	 	 rotation="0 80 0" />
+
+</placeables>

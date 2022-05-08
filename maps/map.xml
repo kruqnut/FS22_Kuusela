@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map width="2048" height="2048" imageFilename="maps/overview.png"  mapFieldColor="0.1500 0.1195 0.0953" mapGrassFieldColor="0.1470 0.1441 0.0823">
+    <filename>maps/map.i3d</filename>
+    <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+    <textureMemoryUsage>0</textureMemoryUsage>
+
+    <culling xzOffset="100" />
+    <densityMap revision="1" />
+    <terrainLodTexture revision="1" />
+    <splitShapes revision="1" />
+    <tipCollision revision="1" />
+    <placementCollision revision="1" />
+    <navigationCollision revision="1" />
+
+    <shop filename="$data/store/ui/shop.xml" />
+    <storeItems filename="maps/storeItems.xml" />
+
+    <sounds filename="maps/sound.xml" />
+    <environment filename="maps/environment.xml" />
+    <growth filename="maps/maps_growth.xml" />
+    <weed filename="$data/maps/mapUS/weed.xml" />
+    <fieldGround filename="$data/maps/mapUS/fieldGround.xml" />
+    <farmlands filename="maps/farmlands.xml" />
+
+    <animals filename="$dataS/character/animals.xml">
+        <names filename="$dataS/character/animalNames.xml" />
+        <food filename="$dataS/character/animalFood.xml" />
+    </animals>
+    <wildlife filename="$dataS/character/wildlifeSpawner.xml" />
+    <npcs filename="maps/npcs.xml" />
+    <helpers filename="maps/helpers.xml" />
+
+    <missionVehicles filename="$dataS/missionVehicles.xml" />
+
+    <licensePlates filename="maps/licensePlates/licensePlatesFI.xml"/>
+
+    <helpline filename="$dataS/helpLine.xml">
+    </helpline>
+
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+
+    <hotspots>
+        <placeableHotspot type="SHOP_ANIMAL"	text="$l10n_animals_dealer"	worldPosition="-907.153 -308.538"	teleportWorldPosition="-907.153 127.888 -308.538" />
+        <placeableHotspot type="SHOP"			text="$l10n_vehicle_shop"	worldPosition="-665.653 -461.533"	teleportWorldPosition="-665.653 135.09 -461.533" />
+    </hotspots>
+    
+    <!-- <treeTypes filename="$data/maps/mapUS/maps_treeTypes.xml" /> -->
+    <!-- <competitiveMultiplayer filename="$data/maps/mapUS/competitiveMultiplayer.xml" /> -->
+	<fillTypes filename="maps/fillTypes.xml" />
+	<densityMapHeightTypes filename="maps/densityMapHeightTypes.xml" />
+    <!-- <sprayTypes filename="$data/maps/mapUS/maps_sprayTypes.xml" /> -->
+    <fruitTypes filename="maps/fruitTypes.xml" />
+
+    <motionPathEffects filename="$data/effects/motionPathEffects.xml"/>
+    <bales filename="$data/maps/maps_bales.xml"/>
+
+    <additionalFiles>
+        <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+        <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
+        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+        <additionalFile filename="$data/effects/effects.xml" />
+  
+    </additionalFiles>
+
+    <!-- Adicione todas as camadas de folhagem que não sejam frutas. Você precisa definir essas camadas de folhagem para poder removê-las com um cultivador ou arado -->
+    <decoFoliages>
+        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoForest" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" />
+
+        <mapping name="grassShort" layerName="decoFoliage" state="9" />
+    </decoFoliages>
+
+    <paintableFoliages>
+        <paintableFoliage layerName="grass" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="meadow" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoBush" startChannel="0" numStateChannels="4" />
+        <paintableFoliage layerName="decoFoliage" startChannel="0" numStateChannels="4" />
+    </paintableFoliages>
+
+    <!-- Tipos de solo pintáveis - precisam ser definidos no map.i3d nó: TerrainTransformGroup|CombinedLayer -->
+    <groundTypeMappings>
+        <!-- Base -->
+        <groundTypeMapping type="dirt"				title="$l10n_groundType_dirt" layer="DIRT" />
+        <!-- Padrão -->	
+        <groundTypeMapping type="asphalt"			title="$l10n_groundType_asphalt" layer="CONCRETE" />  <!-- fallback para a camada de concreto para colocáveis usando "asfalto" -->
+        <groundTypeMapping type="gravel"			title="$l10n_groundType_gravel" layer="GRAVEL" />
+        <groundTypeMapping type="grass"				title="$l10n_groundType_grass" layer="GRASS" />
+        <groundTypeMapping type="animalMud"			title="$l10n_groundType_animalMud" layer="ANIMALMUD" />
+        <groundTypeMapping type="concrete"			title="$l10n_groundType_concrete" layer="CONCRETE" />
+        <!-- Especial -->	
+        <groundTypeMapping type="forestGround"		title="$l10n_groundType_forestGround" layer="FORESTGROUND" />
+		<!-- Added for Kuusela	-->	
+        <groundTypeMapping type="gravelgrass"		title="GRAVELGRASS" layer="GRAVELGRASS" />
+        <groundTypeMapping type="graveldirt"		title="GRAVELDIRT" layer="GRAVELDIRT" />
+        <groundTypeMapping type="grassdrypatchy"	title="GRASSDRYPATCHY" layer="GRASSDRYPATCHY" />
+        <groundTypeMapping type="pathwaygravel"		title="PATHWAYGRAVEL" layer="PATHWAYGRAVEL" />
+		
+    </groundTypeMappings>
+</map>

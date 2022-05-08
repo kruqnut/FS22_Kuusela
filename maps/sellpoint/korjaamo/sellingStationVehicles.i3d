@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sellingStationVehicles" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sellingStationVehicles.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="sellingStationVehicles" collision="false" trigger="true" collisionMask="2097152" clipDistance="150" nodeId="1">
+      <Shape name="vehicleTrigger" shapeId="1" static="true" trigger="true" collisionMask="2097152" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="2"/>
+      <Shape name="playerInteractionTrigger" translation="5.66488 0 5.20423" shapeId="2" static="true" trigger="true" collisionMask="1048576" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="3">
+        <TransformGroup name="workshopMarker" collision="false" nodeId="4">
+          <TransformGroup name="playerTriggerMarker" collision="false" nodeId="5"/>
+        </TransformGroup>
+      </Shape>
+      <TransformGroup name="hotspotNode" nodeId="6"/>
+      <TransformGroup name="teleportNode" nodeId="7"/>
+      <Shape name="tipCollision" visibility="false" shapeId="3" static="true" density="0" collisionMask="524288" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="8"/>
+      <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6.65681 0 -7.15241" nodeId="9">
+        <TransformGroup name="tipOcclusionUpdateArea1End" translation="11.2251 0 14.3275" nodeId="10"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>
